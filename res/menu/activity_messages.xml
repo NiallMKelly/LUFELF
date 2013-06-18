@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+    
+    <item
+        android:id="@+id/sent_message"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/email_icon"
+        android:title="Sent Messages"/>
+    
+    <item
+        android:id="@+id/send_message"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/new_email_icon"
+        android:title="Send New Message"/>
+
+</menu>

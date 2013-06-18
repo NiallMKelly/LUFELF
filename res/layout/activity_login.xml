@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <ScrollView
+        android:id="@+id/RegScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".LoginActivity" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/postericon" />
+
+            <EditText
+                android:id="@+id/usernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/usernameLabel"
+                android:layout_alignBottom="@+id/usernameLabel"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@+id/usernameLabel"
+                android:ems="10"
+                android:hint="@string/username_label"
+                android:inputType="textEmailAddress" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/passwordLabel"
+                android:layout_alignLeft="@+id/usernameText"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="@string/password_label"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/guestButton"
+                android:layout_below="@+id/passwordText"
+                android:layout_marginTop="38dp"
+                android:text="@string/login_button" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

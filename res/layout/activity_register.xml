@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity" >
+
+    <ScrollView
+        android:id="@+id/RegScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:context=".RegisterActivity" >
+
+            <EditText
+                android:id="@+id/nameTextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/name_label"
+                android:inputType="textPersonName" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/libNoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nameTextBox"
+                android:layout_below="@+id/nameTextBox"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/libNo_label"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/regUsernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/libNoText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/username_label"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/regPasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/libNoText"
+                android:layout_below="@+id/regUsernameText"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/password_label"
+                android:inputType="textPassword" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/confPassText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/regUsernameText"
+                android:layout_below="@+id/regPasswordText"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/confPass_label"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/dobText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/confPassText"
+                android:layout_below="@+id/confPassText"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="D.O.B - DD/MM/YYYY"
+                android:inputType="date" />
+
+            <Button
+                android:id="@+id/registerAccoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dobText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="@string/register_button" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
